@@ -65,7 +65,51 @@
     
     <section id="competences">
         <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title text-center">
+                        <h2>Compétences</h2>
+                    </div>
+                </div>
+            </div>
             
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sortBlock text-center">
+                        <form action="#" method="post">
+                                <input type="hidden" name="type" value="orderSkills"> <!-- PHP post information -->
+
+                                <span class="sortText">Trier par :</span>
+
+                                <select name="orderSkills" class="order">
+                                    <option value="name" selected>Nom</option>
+                                    <option value="favorite">Préférences</option>
+                                    <option value="date">Date (récent)</option>
+                                </select>
+                                <input type="submit" name="valid" value="✓" class="valid">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skillList">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="skillBlock text-center">
+                            <img src="img/php.png" alt="PHP">
+                            <h3>PHP</h3>
+                            <div class="separator"></div>
+                            <p>J’ai réalisé le PHP de différents sites internet, allant de la gestion de base de donnée à la manipulation d’APIs</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+
         </div>
     </section>
 
