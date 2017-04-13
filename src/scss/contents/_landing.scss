@@ -1,0 +1,128 @@
+body #landing {
+    height: 100vh;
+    border-bottom: 1px solid $grey;
+    
+    #header {
+        margin-top: 20px;
+        
+        div.menu {
+            display: inline-block;
+            width: 150px;
+            cursor: pointer;
+            position: relative;
+            padding-top: 25px;
+
+            a {
+                font-size: 20px;
+                font-weight: 300;
+                transition: color 0.7s cubic-bezier(.42, 0, 0, 1), 
+            }
+
+            .underline {
+                background-color: $grey;
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                margin-top: 3px;
+                left: 50%;
+                transform: translateX(-50%);
+                will-change: transform;
+                transition: width 0.7s cubic-bezier(.42, 0, 0, 1), background-color 0.7s cubic-bezier(.42, 0, 0, 1);
+            }
+
+            &:hover {
+
+                a {
+                    color: $grey-hover;
+                }
+
+                .underline {
+                    width: 50%;
+                    background-color: $grey-hover;
+                }
+            }
+        }
+    }
+    
+    .centerElement {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        will-change: transform;
+        cursor: default;
+        user-select: none;
+        
+        h1 {
+            font-size: 80px;
+            text-transform: uppercase;
+            
+            span {
+                font-weight: 600;
+            }
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 6px;
+            font-weight: 300;
+            
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.informationDiv {
+    position: absolute;
+    color: $grey;
+    background-color: transparent;
+    border: 1px solid $grey;
+    padding: 7px 10px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 0 2px rgba(52, 52, 52, 0.3);
+    transform: scale(0) rotate(-12deg);
+    transition: transform .25s, opacity .25s;
+    opacity: 0;
+    z-index: 10;
+    
+    &:before {
+        content: "";
+        border-left: 8px solid transparent !important;
+        border-right: 8px solid transparent !important;
+        border-bottom: 8px solid $grey;
+        border-top: none;
+        height: 0;
+        width: 0;
+        top: -8px;
+        left: 50%;
+        margin-left: -8px;
+        position: absolute;
+    }
+}
+    
+.display {
+    transform:scale(1) rotate(0);
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+@keyframes arrow {
+    0% {transform:   translateX(-50%) translateY(0%);}
+    50% {transform:  translateX(-50%) translateY(20%);}
+    100% {transform: translateX(-50%) translateY(0%);}
+}

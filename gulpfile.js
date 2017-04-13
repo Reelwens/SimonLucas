@@ -7,10 +7,7 @@ This gulpfile :
 - Concat JS files
 */
 
-/*
- * Configurations
- */
-
+// Configurations
 var config = {
     'root': 'dist/',
     'src' : 'src/',
@@ -23,7 +20,6 @@ var gulp          = require( 'gulp' ),
     css_nano      = require( 'gulp-cssnano' ),
     rename        = require( 'gulp-rename' ),
     plumber       = require( 'gulp-plumber' ),
-    sourcemaps    = require( 'gulp-sourcemaps' ),
     sass          = require( 'gulp-sass' ),
     autoprefixer  = require( 'gulp-autoprefixer' ),
     concat        = require( 'gulp-concat' ),
@@ -73,13 +69,11 @@ gulp.task('sounds', () => {
 gulp.task( 'sass', function()
 {
     return gulp.src( './src/scss/*.scss' )      // Get Sass files
-        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(sourcemaps.write())
         .pipe(rename(function (path) {
             path.basename += '.min';
         }))

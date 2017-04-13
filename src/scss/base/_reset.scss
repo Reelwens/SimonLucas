@@ -133,7 +133,12 @@ table th {
 }
 
 /* a */
-a {
+a,a:link,a:visited,a:focus,a:active {
     color:inherit;
     outline:none;
+    text-decoration: none;
+}
+a:hover {
+    outline:none;
+    text-decoration: none;
 }
