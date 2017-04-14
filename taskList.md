@@ -24,6 +24,3 @@
   - [ ] Triage des compétences
   - [ ] Triage des projets
   - [ ] Aucun rechargement de page (ajax)
-  
-- [ ] Divers
-  - [ ] Modifier les projets sur la maquette (affichage compétences du projet)

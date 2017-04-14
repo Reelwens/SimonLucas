@@ -33,6 +33,7 @@ section#skills, section#projects {
     
     .skillList {
         margin-top: 80px;
+        margin-bottom: 60px;
         
         .skillBlock {
             background-color: white;
@@ -78,6 +79,7 @@ section#skills, section#projects {
     
     .projectList {
         margin-top: 80px;
+        margin-bottom: 60px;
         
         .projectBlock {
             background-color: white;
@@ -133,8 +135,6 @@ section#skills, section#projects {
             }
             
             .more {
-                position: relative;
-                
                 .dataInfo {
                     @media screen and (max-width: $desktop) {
                         margin-bottom: 25px;
@@ -157,12 +157,25 @@ section#skills, section#projects {
                 }
 
                 .links {
-                    position: absolute;
-                    bottom: 0;
+                    margin-top: 38px;
+                    
+                    @media screen and (max-width: $desktop) and (min-width: $tablet) {
+                        margin-left: 90px;
+                    }
+                    
+                    @media screen and (max-width: $tablet) and (min-width: $phone) {
+                        margin-left: 30px;
+                    }
+                    
+                    @media screen and (max-width: $phone) {
+                        margin-top: 0px;
+                        margin-left: 19px;
+                        margin-bottom: 25px;
+                    }
                    
                     img {
                         width: 36px;
-                        margin: 0 5px;
+                        margin: 0 6px;
                     }
                 }
             }
