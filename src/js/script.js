@@ -39,3 +39,14 @@ $(document).ready(function(){
         return false;
     });
 });
+
+$(document).ready(function(){
+    $('a[href^="#contact"]').click(function(){
+        var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+            scrollTop:$(the_id).offset().top
+        }, 1500, "easeInOutCubic");
+        return false;
+    });
+});

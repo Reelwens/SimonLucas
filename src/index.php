@@ -43,6 +43,10 @@
                                         <a href="#skills">Compétences</a>
                                         <div class="underline"></div>
                                     </div>
+                                    <div class="menu text-center">
+                                        <a href="#contact">Me contacter</a>
+                                        <div class="underline"></div>
+                                    </div>
                                 </nav>
                             </div> <!-- End right header -->
 
@@ -182,6 +186,42 @@
             </div>
         </div>
     </section>
+    
+    <section id="contact">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title text-center">
+                        <h2>Me contacter</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="contactBlock text-center">
+                        <p>Mail : <span>contact@simonlucas.fr</span></p>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/simonlucas1/" target="_BLANK"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
+                            <a href="https://github.com/Reelwens/" target="_BLANK"><img src="img/github-logo.svg" alt="GitHub"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p><a href="#">Conditions Générales d'Utilisation</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 <!-- Information div -->

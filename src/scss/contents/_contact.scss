@@ -1,0 +1,42 @@
+section#contact {
+    
+    .title h2 {
+        margin-top: 60px;
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    
+    .contactBlock {
+        margin-top: 70px;
+        background-color: white;
+        box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+        transition: box-shadow 0.25s ease-out;
+        margin-bottom: 100px;
+        border-radius: 3px;
+        
+        p {
+            padding-top: 45px;
+            margin-bottom: 30px;
+            font-size: 15px;
+            font-weight: 300;
+            
+            span {
+                text-decoration: underline;
+            }
+        }
+        
+        div.icon {
+            padding-bottom: 40px;
+            
+            a img {
+                width: 32px;
+                margin: 0 10px;
+            }
+        }
+        
+        
+        &:hover {
+            box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
