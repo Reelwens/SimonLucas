@@ -1,0 +1,175 @@
+section#skills, section#projects {
+    border-bottom: 1px solid $grey;
+    
+    .title h2 {
+        margin-top: 60px;
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    
+    .sortBlock {
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 40px;
+        position: relative;
+        
+        .order {
+            height: 23px;
+            width: 157px;
+            border-bottom: 1px solid $grey;
+            background-image: url(../img/selectArrow.png);
+            background-position: 97% center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        
+        .valid {
+            position: absolute;
+            margin-left: 15px;
+            border: 1px solid $grey;
+            padding: 1px;
+        }
+    }
+    
+    .skillList {
+        margin-top: 80px;
+        
+        .skillBlock {
+            background-color: white;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+            transition: box-shadow 0.25s ease-out;
+            margin-bottom: 60px;
+            border-radius: 3px;
+            
+            img {
+                width: 100%;
+                max-height: 200px;
+                object-fit: cover;
+                border-radius: 3px 3px 0 0;
+            }
+            
+            h3 {
+                margin-top: 25px;
+                font-size: 30px;
+                font-weight: 500;
+                letter-spacing: 0.1em; // 100 in PS
+            }
+            
+            div.separator {
+                margin: 24px auto;
+                height: 1px;
+                width: 35px;
+                background-color: #c3c3c3;
+            }
+            
+            p {
+                font-size: 15px;
+                font-weight: 300;
+                margin: 0 10px;
+                line-height: 24px;
+                padding-bottom: 35px;
+            }
+            
+            &:hover {
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    
+    .projectList {
+        margin-top: 80px;
+        
+        .projectBlock {
+            background-color: white;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.24);
+            transition: box-shadow 0.25s ease-out;
+            border-radius: 3px;
+            margin-bottom: 60px;
+            
+            @media screen and (min-width: $desktop) {
+                max-height: 450px;
+                
+                .fix {
+                    padding-right: 0;
+                }
+            }
+            
+            img {
+                width: 100%;
+                max-height: 450px;
+                object-fit: cover;
+                border-radius: 3px 0 0 3px;
+            }
+            
+            .mainInfo {
+                margin-top: 55px;
+                
+                h3 {
+                    font-size: 30px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em; // 100 in PS
+                    text-transform: uppercase;
+                }
+                
+                div.separator {
+                    margin: 24px auto;
+                    height: 1px;
+                    width: 35px;
+                    background-color: #c3c3c3;
+                }
+                
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin: 0 10px;
+                    line-height: 24px;
+                    padding-bottom: 50px;
+                    
+                    @media screen and (min-width: $desktop) {
+                        height: 220px;
+                    }
+                }
+                
+            }
+            
+            .more {
+                position: relative;
+                
+                .dataInfo {
+                    @media screen and (max-width: $desktop) {
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 300;
+                        margin: 10px 0;
+                        color: $grey-hover;
+
+                        @media screen and (min-width: $desktop) {
+                            padding-left: 10px;
+                        }
+                        @media screen and (max-width: $desktop) {
+                            padding-left: 25px;
+                            padding-right: 25px;
+                        }
+                    }
+                }
+
+                .links {
+                    position: absolute;
+                    bottom: 0;
+                   
+                    img {
+                        width: 36px;
+                        margin: 0 5px;
+                    }
+                }
+            }
+            
+            &:hover {
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

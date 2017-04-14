@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Simon LUCAS</title>
-    <meta name="description" content="Mon site internet" />
+    <meta name="description" content="Etudiant passionné par le web, l'image et ce qui les entoure." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -36,11 +36,11 @@
                             <div class="col-sm-10 col-xs-12 text-right"> <!-- Right header -->
                                 <nav>
                                     <div class="menu text-center">
-                                        <a href="#competences">Compétences</a>
+                                        <a href="#projects">Mes projets</a>
                                         <div class="underline"></div>
                                     </div>
                                     <div class="menu text-center">
-                                        <a href="#">Mes projets</a>
+                                        <a href="#skills">Compétences</a>
                                         <div class="underline"></div>
                                     </div>
                                 </nav>
@@ -53,17 +53,90 @@
 
             <div class="centerElement text-center"> <!-- Center landing -->
                 <h1>Simon <span>LUCAS</span></h1>
-                <a href="http://hetic.net/" target="_BLANK"><h2 id="hetic">Étudiant en seconde année à <span>HETIC</span></h2></a>
+                <!--<a href="http://hetic.net/" target="_BLANK">--><h2 id="catchPhrase">Passionné par <span>le web</span>, <span>l'image</span> et ce qui les entoure.</h2><!--</a>-->
             </div> <!-- End center landing -->
             
             <div class="arrow">
-                <a href="#competences"><img src="img/down-arrow.svg" alt="Flèche" width="64"></a>
+                <a href="#projects"><img src="img/down-arrow.svg" alt="Flèche" width="64"></a>
             </div>
 
         </div> <!-- End container -->
     </section>
     
-    <section id="competences">
+    <section id="projects">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title text-center">
+                        <h2>Mes projets</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sortBlock text-center">
+                        <form action="#" method="post">
+                                <input type="hidden" name="type" value="orderSkills"> <!-- PHP post information -->
+
+                                <span class="sortText">Trier par :</span>
+
+                                <select name="orderSkills" class="order">
+                                    <option value="name" selected>Nom</option>
+                                    <option value="favorite">Préférences</option>
+                                    <option value="date">Date (récent)</option>
+                                </select>
+                                <input type="submit" name="valid" value="✓" class="valid">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projectList">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="projectBlock">
+                            <div class="row">
+                                <div class="col-lg-6 fix">
+                                    <img src="img/project1.png" alt="Un projet">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mainInfo text-center">
+                                        <h3>Nom du projet</h3>
+                                        <div class="separator"></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ducimus, voluptatum quia suscipit. Beatae quibusdam consequuntur, veritatis expedita, necessitatibus provident perspiciatis eligendi odit quia eius tenetur, quis voluptatum, sunt iste.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor recusandae cumque cum rerum quisquam id quas suscipit!</p>
+                                    </div>
+                                    <div class="more">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <div class="dataInfo">
+                                                    <p>Temps passé : 1 semaine</p>
+                                                    <p>Date : 10 janvier 2017</p>
+                                                    <p>Compétences : PHP, CSS, After Effect, Photoshop</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="links">
+                                                    <a href="#"><img src="img/github-logo.svg" alt="GitHub"></a>
+                                                    <a href="#"><img src="img/external-link-symbol.svg" alt="External link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="skills">
         <div class="container">
 
             <div class="row">
@@ -107,15 +180,12 @@
 
                 </div>
             </div>
-            
-            
-
         </div>
     </section>
 
 
 <!-- Information div -->
-<div class="informationDiv">Cursus "Grande École" sur 5 années</div>
+<div class="informationDiv">J'étudie à HETIC, proposant une formation sur 5 années</div>
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
