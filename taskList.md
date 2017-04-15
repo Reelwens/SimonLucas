@@ -16,7 +16,7 @@
   - [x] Hover compétences
   - [ ] Logo animé (after effect)
   - [ ] Simon LUCAS animé (after effect)
-  - [ ] Zoom sur certaines images de projet
+  - [x] Zoom sur certaines images de projet
   
 - [ ] PHP et base de donnée
   - [x] Affichage des compétences

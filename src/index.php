@@ -113,7 +113,7 @@ $skills = $query->fetchAll();
                         <div class="projectBlock">
                             <div class="row">
                                 <div class="col-lg-6 fix">
-                                    <img src="img/<?=$_project->picture ?>" alt="<?=$_project->name ?>">
+                                    <img src="img/<?=$_project->picture ?>" alt="<?=$_project->name ?>" data-action="zoom">
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mainInfo text-center">
