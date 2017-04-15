@@ -1,7 +1,15 @@
 <?php
 // Include php files
-//include 'includes/config.php';
+include 'includes/config.php';
 //include 'includes/handler.php';
+
+// Fetch all projects
+$query = $pdo->query('SELECT * FROM `projects`');
+$projects = $query->fetchAll();
+
+// Fetch all skills
+$query = $pdo->query('SELECT * FROM `skills`');
+$skills = $query->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -100,31 +108,32 @@
             <div class="projectList">
                 <div class="row">
 
+                    <?php foreach($projects as $_project): ?> <!-- For each item, display an element -->
                     <div class="col-md-12">
                         <div class="projectBlock">
                             <div class="row">
                                 <div class="col-lg-6 fix">
-                                    <img src="img/project1.png" alt="Un projet">
+                                    <img src="img/<?=$_project->picture ?>" alt="<?=$_project->name ?>">
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mainInfo text-center">
-                                        <h3>Nom du projet</h3>
+                                        <h3><?=$_project->name ?></h3>
                                         <div class="separator"></div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ducimus, voluptatum quia suscipit. Beatae quibusdam consequuntur, veritatis expedita, necessitatibus provident perspiciatis eligendi odit quia eius tenetur, quis voluptatum, sunt iste.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolor recusandae cumque cum rerum quisquam id quas suscipit!</p>
+                                        <p><?=$_project->description ?></p>
                                     </div>
                                     <div class="more">
                                         <div class="row">
                                             <div class="col-sm-9">
                                                 <div class="dataInfo">
-                                                    <p>Temps passé : 1 semaine</p>
-                                                    <p>Date : 10 janvier 2017</p>
-                                                    <p>Compétences : PHP, CSS, After Effect, Photoshop</p>
+                                                    <p>Temps passé : <?=$_project->time ?></p>
+                                                    <p>Date : <?=$_project->creation_date ?></p>
+                                                    <p>Compétences : <?=$_project->skills ?></p>
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
                                                 <div class="links">
-                                                    <a href="#"><img src="img/github-logo.svg" alt="GitHub"></a>
-                                                    <a href="#"><img src="img/external-link-symbol.svg" alt="External link"></a>
+                                                    <a href="<?=$_project->github ?>"><img src="img/github-logo.svg" alt="GitHub"></a>
+                                                    <a href="<?=$_project->link ?>"><img src="img/external-link-symbol.svg" alt="External link"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -133,6 +142,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php endforeach ?>
 
                 </div>
             </div>
@@ -173,14 +183,16 @@
             <div class="skillList">
                 <div class="row">
 
+                    <?php foreach($skills as $_skill): ?>
                     <div class="col-md-3">
                         <div class="skillBlock text-center">
-                            <img src="img/php.png" alt="PHP">
-                            <h3>PHP</h3>
+                            <img src="img/<?=$_skill->picture ?>" alt="<?=$_skill->name ?>">
+                            <h3><?=$_skill->name ?></h3>
                             <div class="separator"></div>
-                            <p>J’ai réalisé le PHP de différents sites internet, allant de la gestion de base de donnée à la manipulation d’APIs</p>
+                            <p><?=$_skill->description ?></p>
                         </div>
                     </div>
+                    <?php endforeach ?>
 
                 </div>
             </div>

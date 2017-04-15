@@ -2,12 +2,12 @@
 
 - [x] Workflow (organisation des fichiers, gulp, sass, github)
 
-- [ ] Base HTML/CSS de l'ensemble du site
+- [x] Base HTML/CSS de l'ensemble du site
   - [x] Landing page
   - [x] Compétences
   - [x] Projets
-  - [ ] Contact
-  - [ ] Footer
+  - [x] Contact
+  - [x] Footer
 
 - [ ] Animations
   - [x] Bulle suiveuse sur la phrase du langing
@@ -19,8 +19,9 @@
   - [ ] Zoom sur certaines images de projet
   
 - [ ] PHP et base de donnée
-  - [ ] Affichage des compétences
-  - [ ] Affichage des projets
+  - [x] Affichage des compétences
+  - [x] Affichage des projets
+  - [ ] Prise en charge du site & GitHub
   - [ ] Triage des compétences
   - [ ] Triage des projets
   - [ ] Aucun rechargement de page (ajax)

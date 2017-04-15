@@ -68,6 +68,14 @@ section#skills, section#projects {
                 margin: 0 10px;
                 line-height: 24px;
                 padding-bottom: 35px;
+                
+                @media screen and (min-width: $desktop) {
+                    height: 131px;
+                }
+                
+                @media screen and (min-width: $tablet) and (max-width: $desktop) {
+                    height: 155px;
+                }
             }
             
             &:hover {
