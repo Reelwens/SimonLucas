@@ -18,6 +18,19 @@ togglerClass.onmouseleave = function() {
     information_div.classList.remove('display');
 }
 
+// Animation when click on logo
+var logo = document.querySelector('.groupLogo');
+
+logo.onclick = function() {
+    if (logo.classList.contains('clickEvent'))
+        return;
+    logo.classList.add('clickEvent');
+    
+    setTimeout(function() {
+        logo.classList.remove('clickEvent');
+    }, 800);
+};
+
 $(document).ready(function(){
     $('a[href^="#skills"]').click(function(){
         var the_id = $(this).attr("href");

@@ -8,23 +8,39 @@ body section#landing {
         div.logo {
             position: relative;
             
-            img {
+            div.groupLogo {
+                transform: translateY(-4px);
+                
+                img#logo {
                 position: absolute;
                 z-index: 10;
                 transform: rotate(0deg);
                 transition: transform 0.6s cubic-bezier(.79, 0, .19, 1);
                 will-change: transform;
+                cursor: pointer;
                 
-                &:hover {
-                    transform: rotate(360deg);
+                @keyframes bounce {
+                  0%, 20%, 50%, 80%, 100% {transform: translateY(-4px);}
+                  40% {transform: translateY(-24px);}
+                  60% {transform: translateY(-9px);}
+                }
+                
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+                
+                .square {
+                    width: 40px;
+                    height: 40px;
+                    margin: 8px;
+                    background-color: $grey;
+                    position: absolute;
                 }
             }
-            .square {
-                width: 40px;
-                height: 40px;
-                margin: 8px;
-                background-color: $grey;
-                position: absolute;
+            
+            div.clickEvent {
+                animation: bounce 1s 1;
             }
         }
         
