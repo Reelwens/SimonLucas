@@ -246,7 +246,7 @@ $skills = $query->fetchAll();
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><a href="#">Conditions Générales d'Utilisation</a></p>
+                    <p><a href="cgu.php">Conditions Générales d'Utilisation</a></p>
                 </div>
             </div>
         </div>
