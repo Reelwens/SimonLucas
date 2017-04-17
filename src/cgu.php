@@ -15,7 +15,8 @@
 </head>
 <body>
     
-    <section id="cgv">
+    <!-- CGU section -->
+    <section id="cgu">
         <div class="container">
             
             <div class="row">
@@ -86,6 +87,7 @@
         </div>
     </section>
     
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">

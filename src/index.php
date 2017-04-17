@@ -45,6 +45,7 @@ $skills = $query->fetchAll();
 </head>
 <body>
     
+    <!-- Landing section -->
     <section id="landing">
         <div class="container">
 
@@ -89,9 +90,10 @@ $skills = $query->fetchAll();
                 <a href="#projects"><img src="img/down-arrow.svg" alt="Flèche" width="64"></a>
             </div>
 
-        </div> <!-- End container -->
+        </div>
     </section>
     
+    <!-- Projects section -->
     <section id="projects">
         <div class="container">
             
@@ -125,7 +127,8 @@ $skills = $query->fetchAll();
             <div class="projectList">
                 <div class="row">
 
-                    <?php foreach($projects as $_project): ?> <!-- For each item, display an element -->
+                    <!-- Display each project -->
+                    <?php foreach($projects as $_project): ?>
                     <div class="col-md-12">
                         <div class="projectBlock">
                             <div class="row">
@@ -167,6 +170,7 @@ $skills = $query->fetchAll();
         </div>
     </section>
     
+    <!-- Skills section -->
     <section id="skills">
         <div class="container">
 
@@ -200,6 +204,7 @@ $skills = $query->fetchAll();
             <div class="skillList">
                 <div class="row">
 
+                    <!-- Display each skill -->
                     <?php foreach($skills as $_skill): ?>
                     <div class="col-md-3">
                         <div class="skillBlock text-center">
@@ -216,6 +221,7 @@ $skills = $query->fetchAll();
         </div>
     </section>
     
+    <!-- Contact section -->
     <section id="contact">
         <div class="container">
             
@@ -242,6 +248,7 @@ $skills = $query->fetchAll();
         </div>
     </section>
     
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -252,9 +259,10 @@ $skills = $query->fetchAll();
         </div>
     </footer>
 
-
-<!-- Information div -->
-<div class="informationDiv">J'étudie à HETIC, proposant une formation sur 5 années</div>
+    <div class="other">
+        <!-- Information div -->
+        <div class="informationDiv">J'étudie à HETIC, proposant une formation sur 5 années</div>
+    </div>
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
