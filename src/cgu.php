@@ -29,7 +29,7 @@
             
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="cgvBlock">
+                    <div class="cguBlock">
                         <div class="text">
                             <h3>ARTICLE 1 : Objet</h3>
                             <p>Les présentes « conditions générales d'utilisation » ont pour objet l'encadrement juridique des modalités de mise à disposition des services du site simonlucas.fr et leur utilisation par « l'Utilisateur ».</p>
