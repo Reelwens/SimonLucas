@@ -1,19 +1,35 @@
 <?php
+session_start();
 // Include php files
 include 'includes/config.php';
-//include 'includes/handler.php';
+include 'includes/handler.php';
+
+// Define default session orders if empty
+$_SESSION['orderProjects'] = (isset($_SESSION['orderProjects'])) ? $_SESSION['orderProjects'] : 'preference';
+$_SESSION['orderSkills'] = (isset($_SESSION['orderSkills'])) ? $_SESSION['orderSkills'] : 'preference';
+
 
 // Fetch all projects
-$query = $pdo->query('SELECT * FROM `projects`');
+if (($_SESSION['orderProjects']) == ('date')) {
+    $query = $pdo->query('SELECT * FROM `projects` ORDER BY `projects`.`'.$_SESSION['orderProjects'].'` DESC');
+}
+else {
+    $query = $pdo->query('SELECT * FROM `projects` ORDER BY `projects`.`'.$_SESSION['orderProjects'].'` ASC');
+}
 $projects = $query->fetchAll();
 
 // Fetch all skills
-$query = $pdo->query('SELECT * FROM `skills`');
+if (($_SESSION['orderSkills']) == ('date')) {
+    $query = $pdo->query('SELECT * FROM `skills` ORDER BY `skills`.`'.$_SESSION['orderSkills'].'` DESC');
+}
+else {
+    $query = $pdo->query('SELECT * FROM `skills` ORDER BY `skills`.`'.$_SESSION['orderSkills'].'` ASC');
+}
 $skills = $query->fetchAll();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -90,14 +106,14 @@ $skills = $query->fetchAll();
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
                         <form action="#" method="post">
-                                <input type="hidden" name="type" value="orderSkills"> <!-- PHP post information -->
+                                <input type="hidden" name="type" value="orderProjects"> <!-- PHP post information -->
 
                                 <span class="sortText">Trier par :</span>
 
-                                <select name="orderSkills" class="order">
-                                    <option value="name" selected>Nom</option>
-                                    <option value="favorite">Préférences</option>
-                                    <option value="date">Date (récent)</option>
+                                <select name="orderProjects" class="order">
+                                    <option value="name"       <?php if($_SESSION['orderProjects'] == 'name' )       echo 'selected="selected"' ?>>Nom</option>
+                                    <option value="preference" <?php if($_SESSION['orderProjects'] == 'preference' ) echo 'selected="selected"' ?>>Préférences</option>
+                                    <option value="date"       <?php if($_SESSION['orderProjects'] == 'date' )       echo 'selected="selected"' ?>>Date (récent)</option>
                                 </select>
                                 <input type="submit" name="valid" value="✓" class="valid">
                         </form>
@@ -170,9 +186,9 @@ $skills = $query->fetchAll();
                                 <span class="sortText">Trier par :</span>
 
                                 <select name="orderSkills" class="order">
-                                    <option value="name" selected>Nom</option>
-                                    <option value="favorite">Préférences</option>
-                                    <option value="date">Date (récent)</option>
+                                    <option value="name"       <?php if($_SESSION['orderSkills'] == 'name' )       echo 'selected="selected"' ?>>Nom</option>
+                                    <option value="preference" <?php if($_SESSION['orderSkills'] == 'preference' ) echo 'selected="selected"' ?>>Préférences</option>
+                                    <option value="date"       <?php if($_SESSION['orderSkills'] == 'date' )       echo 'selected="selected"' ?>>Date (récent)</option>
                                 </select>
                                 <input type="submit" name="valid" value="✓" class="valid">
                         </form>

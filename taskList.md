@@ -22,6 +22,6 @@
   - [x] Affichage des compétences
   - [x] Affichage des projets
   - [x] Prise en charge du site & GitHub
-  - [ ] Triage des compétences
-  - [ ] Triage des projets
+  - [x] Triage des compétences
+  - [x] Triage des projets
   - [ ] Aucun rechargement de page (ajax)
