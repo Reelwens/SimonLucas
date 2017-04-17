@@ -14,7 +14,7 @@
   - [x] Flèche allant vers le bas animée
   - [x] Liens du header surlignés
   - [x] Hover compétences
-  - [ ] Logo animé (after effect)
+  - [x] Logo animé
   - [ ] Simon LUCAS animé (after effect)
   - [x] Zoom sur certaines images de projet
   

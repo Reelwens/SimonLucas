@@ -53,8 +53,9 @@ $skills = $query->fetchAll();
                     <div class="col-sm-12">
                         <div class="row">
 
-                            <div class="col-sm-2 hidden-xs"> <!-- Left header -->
-                                <a href="#"><img src="img/logo.svg" alt="Logo Simon Lucas" width="40"></a>
+                            <div class="col-sm-2 hidden-xs logo"> <!-- Left header -->
+                                <a href="#"><img src="img/logo_l.svg" alt="Logo Simon Lucas" width="56"></a>
+                                <div class="square"></div>
                             </div> <!-- End left header -->
 
                             <div class="col-sm-10 col-xs-12 text-right"> <!-- Right header -->
