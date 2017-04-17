@@ -131,9 +131,9 @@ $skills = $query->fetchAll();
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
-                                                <div class="links">
-                                                    <a href="<?=$_project->github ?>"><img src="img/github-logo.svg" alt="GitHub"></a>
-                                                    <a href="<?=$_project->link ?>"><img src="img/external-link-symbol.svg" alt="External link"></a>
+                                                <div class="links text-right">
+                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
+                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->link ?>"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
                                                 </div>
                                             </div>
                                         </div>

@@ -21,7 +21,7 @@
 - [ ] PHP et base de donnée
   - [x] Affichage des compétences
   - [x] Affichage des projets
-  - [ ] Prise en charge du site & GitHub
+  - [x] Prise en charge du site & GitHub
   - [ ] Triage des compétences
   - [ ] Triage des projets
   - [ ] Aucun rechargement de page (ajax)
