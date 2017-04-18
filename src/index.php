@@ -35,15 +35,40 @@ $skills = $query->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Simon LUCAS</title>
-    <meta name="description" content="Etudiant passionné par le web, l'image et ce qui les entoure." />
+    <title>Simon LUCAS — Portfolio</title>
+    <meta name="description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
+    
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Simon LUCAS">
+    <meta itemprop="description" content="Étudiant passionné par le web, l'image et ce qui les entoure.">
+    <meta itemprop="image" content="https://www.simonlucas.fr/i/screen.png">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simon LUCAS">
+    <meta name="twitter:description" content="Étudiant passionné par le web, l'image et ce qui les entoure.">
+    <meta name="twitter:creator" content="@Reelwens">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://www.simonlucas.fr/i/screen.png">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Simon LUCAS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.reelwens.fr/web/simonlucas.fr/" />
+    <meta property="og:image" content="https://www.simonlucas.fr/i/screen.png" />
+    <meta property="og:description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
+    <meta property="og:site_name" content="Simon LUCAS" />
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <?php
+    //Analytics
+    include_once("includes/analyticstracking.php")
+    ?>
     
     <!-- Landing section -->
     <section id="landing">
