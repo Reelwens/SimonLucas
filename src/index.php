@@ -79,14 +79,14 @@ $skills = $query->fetchAll();
                     <div class="col-sm-12">
                         <div class="row">
 
-                            <div class="col-sm-2 hidden-xs logo"> <!-- Left header -->
+                            <div class="col-sm-2 col-xs-12 logo"> <!-- Left header -->
                                 <div class="groupLogo">
                                     <img id="logo" src="img/logo_l.svg" alt="Logo Simon Lucas" width="56">
                                 <div class="square"></div>
                                 </div>
                             </div> <!-- End left header -->
 
-                            <div class="col-sm-10 col-xs-12 text-right"> <!-- Right header -->
+                            <div class="col-sm-10 col-xs-12 text-right rightHeader"> <!-- Right header -->
                                 <nav>
                                     <div class="menu text-center">
                                         <a href="#projects">Mes projets</a>
@@ -96,7 +96,7 @@ $skills = $query->fetchAll();
                                         <a href="#skills">Compétences</a>
                                         <div class="underline"></div>
                                     </div>
-                                    <div class="menu text-center">
+                                    <div class="menu text-center hidden-xs">
                                         <a href="#contact">Me contacter</a>
                                         <div class="underline"></div>
                                     </div>
