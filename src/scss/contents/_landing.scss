@@ -61,7 +61,9 @@ body section#landing {
         }
         
         .rightHeader {
+        @media screen and (max-width: $phone) {
             text-align: center;
+        }
         
             div.menu {
                 display: inline-block;
