@@ -46,7 +46,7 @@ section#skills, section#projects, section#cgu {
             
             img {
                 width: 100%;
-                max-height: 200px;
+                height: 150px;
                 object-fit: cover;
                 border-radius: 3px 3px 0 0;
             }
@@ -55,25 +55,25 @@ section#skills, section#projects, section#cgu {
                 margin-top: 25px;
                 font-size: 30px;
                 font-weight: 500;
-                letter-spacing: 0.1em; // 100 in PS
+                letter-spacing: 0.07em; // 70 in PS
             }
             
             div.separator {
-                margin: 24px auto;
+                margin: 14px auto;
                 height: 1px;
                 width: 35px;
                 background-color: #c3c3c3;
             }
             
             p {
-                font-size: 15px;
+                font-size: 17px;
                 font-weight: 300;
                 margin: 0 10px;
                 line-height: 24px;
-                padding-bottom: 35px;
+                padding-bottom: 20px;
                 
                 @media screen and (min-width: $desktop) {
-                    height: 131px;
+                    
                 }
                 
                 @media screen and (min-width: $tablet) and (max-width: $desktop) {
@@ -106,12 +106,18 @@ section#skills, section#projects, section#cgu {
                 }
             }
             
-            img {
+            img.projectImg {
                 width: 100%;
-                max-height: 450px;
+                height: 450px;
                 object-fit: cover;
                 object-position: 50% 50%; // Change position
-                border-radius: 3px 0 0 3px;
+                
+                @media screen and (min-width: $desktop) {
+                    border-radius: 3px 0 0 3px;
+                }
+                @media screen and (max-width: $desktop) {
+                    border-radius: 3px 3px 0 0;
+                }
             }
             
             .mainInfo {
