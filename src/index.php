@@ -6,7 +6,7 @@ include 'includes/handler.php';
 
 // Define default session orders if empty
 $_SESSION['orderProjects'] = (isset($_SESSION['orderProjects'])) ? $_SESSION['orderProjects'] : 'preference';
-$_SESSION['orderSkills'] = (isset($_SESSION['orderSkills'])) ? $_SESSION['orderSkills'] : 'preference';
+$_SESSION['orderSkills'] = (isset($_SESSION['orderSkills'])) ? $_SESSION['orderSkills'] : 'theme';
 
 
 // Fetch all projects
@@ -135,7 +135,7 @@ $skills = $query->fetchAll();
             <div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
-                        <form action="#" method="post">
+                        <form action="#projects" method="post">
                                 <input type="hidden" name="type" value="orderProjects"> <!-- PHP post information -->
 
                                 <span class="sortText">Trier par :</span>
@@ -160,7 +160,7 @@ $skills = $query->fetchAll();
                         <div class="projectBlock">
                             <div class="row">
                                 <div class="col-lg-6 fix">
-                                    <img src="img/<?=$_project->picture ?>" alt="<?=$_project->name ?>" data-action="zoom" data-original="img/<?=$_project->picture ?>_hd">
+                                    <img src="img/projects/<?=$_project->picture ?>" alt="<?=$_project->name ?>" class="projectImg" data-action="zoom" data-original="img/projects/hd/<?=$_project->picture ?>">
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="mainInfo text-center">
@@ -179,8 +179,8 @@ $skills = $query->fetchAll();
                                             </div>
                                             <div class="col-sm-3">
                                                 <div class="links text-right">
-                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
-                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->link ?>"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
+                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>" target="_BLANK"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
+                                                    <?php if(($_project->link) != '#') { ?><a href="<?=$_project->link ?>" target="_BLANK"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,15 +212,15 @@ $skills = $query->fetchAll();
             <div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
-                        <form action="#" method="post">
+                        <form action="#skills" method="post">
                                 <input type="hidden" name="type" value="orderSkills"> <!-- PHP post information -->
 
                                 <span class="sortText">Trier par :</span>
 
                                 <select name="orderSkills" class="order">
+                                    <option value="theme" <?php if($_SESSION['orderSkills'] == 'theme' ) echo 'selected="selected"' ?>>Catégories</option>
                                     <option value="name"       <?php if($_SESSION['orderSkills'] == 'name' )       echo 'selected="selected"' ?>>Nom</option>
                                     <option value="preference" <?php if($_SESSION['orderSkills'] == 'preference' ) echo 'selected="selected"' ?>>Préférences</option>
-                                    <option value="date"       <?php if($_SESSION['orderSkills'] == 'date' )       echo 'selected="selected"' ?>>Date (récent)</option>
                                 </select>
                                 <input type="submit" name="valid" value="✓" class="valid">
                         </form>
@@ -235,10 +235,10 @@ $skills = $query->fetchAll();
                     <?php foreach($skills as $_skill): ?>
                     <div class="col-md-3">
                         <div class="skillBlock text-center">
-                            <img src="img/<?=$_skill->picture ?>" alt="<?=$_skill->name ?>">
+                            <img src="img/skills/<?=$_skill->picture ?>" alt="<?=$_skill->name ?>">
                             <h3><?=$_skill->name ?></h3>
                             <div class="separator"></div>
-                            <p><?=$_skill->description ?></p>
+                            <p><?=$_skill->rating ?></p>
                         </div>
                     </div>
                     <?php endforeach ?>
