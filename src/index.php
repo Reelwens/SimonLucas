@@ -265,8 +265,8 @@ $skills = $query->fetchAll();
                     <div class="contactBlock text-center">
                         <p>Mail : <span>contact@simonlucas.fr</span></p>
                         <div class="icon">
-                            <a href="https://www.linkedin.com/in/simonlucas1/" target="_BLANK"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
                             <a href="https://github.com/Reelwens/" target="_BLANK"><img src="img/github-logo.svg" alt="GitHub"></a>
+                            <a href="https://www.linkedin.com/in/simonlucas1/" target="_BLANK"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
