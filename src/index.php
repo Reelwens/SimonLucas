@@ -3,29 +3,6 @@ session_start();
 // Include php files
 include 'includes/config.php';
 include 'includes/handler.php';
-
-// Define default session orders if empty
-$_SESSION['orderProjects'] = (isset($_SESSION['orderProjects'])) ? $_SESSION['orderProjects'] : 'preference';
-$_SESSION['orderSkills'] = (isset($_SESSION['orderSkills'])) ? $_SESSION['orderSkills'] : 'theme';
-
-
-// Fetch all projects
-if (($_SESSION['orderProjects']) == ('date')) {
-    $query = $pdo->query('SELECT * FROM `projects` ORDER BY `projects`.`'.$_SESSION['orderProjects'].'` DESC');
-}
-else {
-    $query = $pdo->query('SELECT * FROM `projects` ORDER BY `projects`.`'.$_SESSION['orderProjects'].'` ASC');
-}
-$projects = $query->fetchAll();
-
-// Fetch all skills
-if (($_SESSION['orderSkills']) == ('date')) {
-    $query = $pdo->query('SELECT * FROM `skills` ORDER BY `skills`.`'.$_SESSION['orderSkills'].'` DESC');
-}
-else {
-    $query = $pdo->query('SELECT * FROM `skills` ORDER BY `skills`.`'.$_SESSION['orderSkills'].'` ASC');
-}
-$skills = $query->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +32,7 @@ $skills = $query->fetchAll();
     <!-- Open Graph data -->
     <meta property="og:title" content="Simon LUCAS" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.reelwens.fr/web/simonlucas.fr/" />
+    <meta property="og:url" content="https://www.simonlucas.fr/" />
     <meta property="og:image" content="https://www.simonlucas.fr/i/screen.png" />
     <meta property="og:description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
     <meta property="og:site_name" content="Simon LUCAS" />
