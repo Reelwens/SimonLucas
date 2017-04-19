@@ -71,14 +71,6 @@ section#skills, section#projects, section#cgu {
                 margin: 0 10px;
                 line-height: 24px;
                 padding-bottom: 20px;
-                
-                @media screen and (min-width: $desktop) {
-                    
-                }
-                
-                @media screen and (min-width: $tablet) and (max-width: $desktop) {
-                    height: 155px;
-                }
             }
             
             &:hover {

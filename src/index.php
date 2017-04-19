@@ -233,7 +233,7 @@ $skills = $query->fetchAll();
 
                     <!-- Display each skill -->
                     <?php foreach($skills as $_skill): ?>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4">
                         <div class="skillBlock text-center">
                             <img src="img/skills/<?=$_skill->picture ?>" alt="<?=$_skill->name ?>">
                             <h3><?=$_skill->name ?></h3>
