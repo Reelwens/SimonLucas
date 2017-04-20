@@ -2,4 +2,39 @@ body {
     background-color: #f4f4f4;
     color: $grey;
     font-family: 'Poppins', sans-serif;
+    
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(142, 142, 142, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease-out;
+}
+#return-to-top:hover {
+    background: rgba(52, 52, 52, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 7px;
+}
+
+a:focus {
+    color: $grey-hover;
 }

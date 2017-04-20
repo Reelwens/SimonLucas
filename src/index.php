@@ -267,6 +267,7 @@ include 'includes/handler.php';
         <!-- Information div -->
         <div class="informationDiv">J'étudie à HETIC, proposant une formation sur 5 années</div>
     </div>
+    <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
