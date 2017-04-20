@@ -151,6 +151,10 @@ body section#landing {
     opacity: 0;
     z-index: 10;
     
+    abbr {
+        border-bottom: 0px;
+    }
+    
     &:before {
         content: "";
         border-left: 8px solid transparent !important;

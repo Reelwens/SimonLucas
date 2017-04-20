@@ -39,6 +39,7 @@ include 'includes/handler.php';
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -66,15 +67,15 @@ include 'includes/handler.php';
                             <div class="col-sm-10 col-xs-12 text-right rightHeader"> <!-- Right header -->
                                 <nav>
                                     <div class="menu text-center">
-                                        <a href="#projects">Mes projets</a>
+                                        <a href="#projects" title="Liste des projets">Mes projets</a>
                                         <div class="underline"></div>
                                     </div>
                                     <div class="menu text-center">
-                                        <a href="#skills">Compétences</a>
+                                        <a href="#skills" title="Liste des compétences">Compétences</a>
                                         <div class="underline"></div>
                                     </div>
                                     <div class="menu text-center hidden-xs">
-                                        <a href="#contact">Me contacter</a>
+                                        <a href="#contact" title="Possibilités de contact">Me contacter</a>
                                         <div class="underline"></div>
                                     </div>
                                 </nav>
@@ -156,8 +157,8 @@ include 'includes/handler.php';
                                             </div>
                                             <div class="col-sm-3">
                                                 <div class="links text-right">
-                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>" target="_BLANK"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
-                                                    <?php if(($_project->link) != '#') { ?><a href="<?=$_project->link ?>" target="_BLANK"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
+                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>" target="_BLANK" title="Lien GitHub"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
+                                                    <?php if(($_project->link) != '#') { ?><a href="<?=$_project->link ?>" target="_BLANK" title="Lien externe"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -242,8 +243,8 @@ include 'includes/handler.php';
                     <div class="contactBlock text-center">
                         <p>Mail : <span>contact@simonlucas.fr</span></p>
                         <div class="icon">
-                            <a href="http://bit.ly/2pDvPUp" target="_BLANK"><img src="img/github-logo.svg" alt="GitHub"></a>
-                            <a href="http://bit.ly/2pgZh2G" target="_BLANK"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
+                            <a href="http://bit.ly/2pDvPUp" target="_BLANK" title="Accéder à mon GitHub"><img src="img/github-logo.svg" alt="GitHub"></a>
+                            <a href="http://bit.ly/2pgZh2G" target="_BLANK" title="Accéder à mon LinkedIn"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +258,7 @@ include 'includes/handler.php';
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><a href="cgu.php">Conditions Générales d'Utilisation</a></p>
+                    <p><a href="cgu.php" title="Accéder aux conditions générales d'utilisation">Conditions Générales d'Utilisation</a></p>
                 </div>
             </div>
         </div>
@@ -265,7 +266,7 @@ include 'includes/handler.php';
 
     <div class="other">
         <!-- Information div -->
-        <div class="informationDiv">J'étudie à HETIC, proposant une formation sur 5 années</div>
+        <div class="informationDiv">J'étudie à <abbr title="Hautes études des technologies de l'information et de la communication">HETIC</abbr>, proposant une formation sur 5 années</div>
     </div>
     <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
