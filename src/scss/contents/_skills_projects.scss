@@ -19,7 +19,8 @@ section#skills, section#projects, section#cgu {
             height: 23px;
             width: 157px;
             border-bottom: 1px solid $grey;
-            background-image: url(../img/selectArrow.png);
+            background-image: url(../img/selectArrow.svg);
+            background-size: contain;
             background-position: 97% center;
             background-repeat: no-repeat;
             cursor: pointer;
