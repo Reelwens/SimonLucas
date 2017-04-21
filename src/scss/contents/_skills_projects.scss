@@ -101,15 +101,21 @@ section#skills, section#projects, section#cgu {
             
             img.projectImg {
                 width: 100%;
-                height: 450px;
                 object-fit: cover;
                 object-position: 50% 50%; // Change position
                 
                 @media screen and (min-width: $desktop) {
                     border-radius: 3px 0 0 3px;
+                    height: 450px;
                 }
                 @media screen and (max-width: $desktop) {
                     border-radius: 3px 3px 0 0;
+                }
+                @media screen and (min-width: $tablet) and (max-width: $desktop) {
+                    height: 350px;
+                }
+                @media screen and (max-width: $tablet) {
+                    height: 250px;
                 }
             }
             
