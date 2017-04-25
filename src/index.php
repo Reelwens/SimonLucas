@@ -37,9 +37,8 @@ include 'includes/handler.php';
     <meta property="og:description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
     <meta property="og:site_name" content="Simon LUCAS" />
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500, 600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -270,6 +269,8 @@ include 'includes/handler.php';
     </div>
     <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
+<!-- Optional CSS -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/script.js" charset="utf-8"></script>
