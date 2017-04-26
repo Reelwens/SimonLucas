@@ -12,8 +12,8 @@ include 'includes/handler.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Simon LUCAS — Portfolio</title>
-    <meta name="description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
+    <title>Simon LUCAS — Développeur web &amp; designer à HETIC</title>
+    <meta name="description" content="Passionné par le web, l'image et ce qui les entoure. Je me forme dans le développement web et le design à HETIC en H2. Découvrez mes projets et compétences à travers mon portfolio. Je réalise divers sites internet et créations visuelles dans le cadre de mes études et j'administre le serveur SamaGames, tout en m'occupant de sa communication." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
     
     <!-- Schema.org markup for Google+ -->
@@ -106,6 +106,7 @@ include 'includes/handler.php';
                 <div class="col-sm-12">
                     <div class="title text-center">
                         <h2>Mes projets</h2>
+                        <p>Cliquez sur les images pour les agrandir.</p>
                     </div>
                 </div>
             </div>
