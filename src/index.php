@@ -13,13 +13,8 @@ include 'includes/handler.php';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Simon LUCAS — Développeur web &amp; designer à HETIC</title>
-    <meta name="description" content="Passionné par le web, l'image et ce qui les entoure. Je me forme dans le développement web et le design à HETIC en H2. Découvrez mes projets et compétences à travers mon portfolio. Je réalise divers sites internet et créations visuelles dans le cadre de mes études et j'administre le serveur SamaGames, tout en m'occupant de sa communication." />
+    <meta name="description" content="Passionné par le web, l'image et ce qui les entoure. Je me forme dans le développement web et le design à HETIC. Découvrez mes projets et compétences." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
-    
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Simon LUCAS">
-    <meta itemprop="description" content="Étudiant passionné par le web, l'image et ce qui les entoure.">
-    <meta itemprop="image" content="https://www.simonlucas.fr/i/screen.png">
     
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
@@ -253,6 +248,12 @@ include 'includes/handler.php';
         </div>
     </section>
     
+    <div class="other">
+        <!-- Information div -->
+        <div class="informationDiv"><h2>J'étudie à <abbr title="Hautes études des technologies de l'information et de la communication">HETIC</abbr>, proposant une formation sur 5 années</h2></div>
+    </div>
+    <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -263,12 +264,6 @@ include 'includes/handler.php';
             </div>
         </div>
     </footer>
-
-    <div class="other">
-        <!-- Information div -->
-        <div class="informationDiv">J'étudie à <abbr title="Hautes études des technologies de l'information et de la communication">HETIC</abbr>, proposant une formation sur 5 années</div>
-    </div>
-    <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
 <!-- Optional CSS -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
