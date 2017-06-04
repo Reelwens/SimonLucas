@@ -87,7 +87,7 @@ include 'includes/handler.php';
 
             <div class="centerElement text-center"> <!-- Center landing -->
                 <h1>Simon <span>LUCAS</span></h1>
-                <!--<a href="http://hetic.net/" target="_BLANK">--><h2 id="catchPhrase">Passionné par <span>le web</span>, <span>l'image</span> et ce qui les entoure.</h2><!--</a>-->
+                <!--<a href="http://hetic.net/" target="_blank">--><h2 id="catchPhrase">Passionné par <span>le web</span>, <span>l'image</span> et ce qui les entoure.</h2><!--</a>-->
             </div> <!-- End center landing -->
             
             <div class="arrow">
@@ -157,8 +157,8 @@ include 'includes/handler.php';
                                             </div>
                                             <div class="col-sm-3">
                                                 <div class="links text-right">
-                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>" target="_BLANK" title="Lien GitHub"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
-                                                    <?php if(($_project->link) != '#') { ?><a href="<?=$_project->link ?>" target="_BLANK" title="Lien externe"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
+                                                    <?php if(($_project->github) != '#') { ?><a href="<?=$_project->github ?>" target="_blank" title="Lien GitHub"><img src="img/github-logo.svg" alt="GitHub"></a><?php } ?>
+                                                    <?php if(($_project->link) != '#') { ?><a href="<?=$_project->link ?>" target="_blank" title="Lien externe"><img src="img/external-link-symbol.svg" alt="External link"></a><?php } ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -243,8 +243,8 @@ include 'includes/handler.php';
                     <div class="contactBlock text-center">
                         <p>Mail : <span>contact@simonlucas.fr</span></p>
                         <div class="icon">
-                            <a href="http://bit.ly/2pDvPUp" target="_BLANK" title="Accéder à mon GitHub"><img src="img/github-logo.svg" alt="GitHub"></a>
-                            <a href="http://bit.ly/2pgZh2G" target="_BLANK" title="Accéder à mon LinkedIn"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
+                            <a href="http://bit.ly/2pDvPUp" target="_blank" title="Accéder à mon GitHub"><img src="img/github-logo.svg" alt="GitHub"></a>
+                            <a href="http://bit.ly/2pgZh2G" target="_blank" title="Accéder à mon LinkedIn"><img src="img/linkedin-logo.svg" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
