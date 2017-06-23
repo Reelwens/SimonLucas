@@ -1,6 +1,6 @@
 # simonlucas.fr
 
-[https://www.simonlucas.fr/](https://www.simonlucas.fr/)
+[https://simonlucas.fr/](https://simonlucas.fr/)
 
 ![Screenshoot](https://www.simonlucas.fr/i/screen.png)
 
