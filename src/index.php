@@ -12,14 +12,14 @@ include 'includes/handler.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Simon LUCAS — Développeur web &amp; designer à HETIC</title>
+    <title>Simon LUCAS — Développeur front-end créatif & entrepreneur</title>
     <meta name="description" content="Passionné par le web, l'image et ce qui les entoure. Je me forme dans le développement web et le design à HETIC. Découvrez mes projets et compétences." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simon LUCAS">
-    <meta name="twitter:description" content="Étudiant passionné par le web, l'image et ce qui les entoure.">
+    <meta name="twitter:description" content="Développeur front-end créatif & entrepreneur.">
     <meta name="twitter:creator" content="@Reelwens">
     <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image:src" content="https://www.simonlucas.fr/i/screen.png">
@@ -29,7 +29,7 @@ include 'includes/handler.php';
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.simonlucas.fr/" />
     <meta property="og:image" content="https://www.simonlucas.fr/i/screen.png" />
-    <meta property="og:description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
+    <meta property="og:description" content="Développeur front-end créatif & entrepreneur." />
     <meta property="og:site_name" content="Simon LUCAS" />
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500, 600" rel="stylesheet">
@@ -82,7 +82,7 @@ include 'includes/handler.php';
 
             <div class="centerElement text-center"> <!-- Center landing -->
                 <h1>Simon <span>LUCAS</span></h1>
-                <!--<a href="http://hetic.net/" target="_blank">--><h2 id="catchPhrase">Passionné par <span>le web</span>, <span>l'image</span> et ce qui les entoure.</h2><!--</a>-->
+                <!--<a href="http://hetic.net/" target="_blank">--><h2 id="catchPhrase">Développeur <span>front-end</span> créatif & <span>entrepreneur</span>.</h2><!--</a>-->
             </div> <!-- End center landing -->
 
             <a class="scroll" href="#projects">
@@ -248,11 +248,7 @@ include 'includes/handler.php';
 
         </div>
     </section>
-
-    <div class="other">
-        <!-- Information div -->
-        <div class="informationDiv"><h2>J'étudie à <abbr title="Hautes études des technologies de l'information et de la communication">HETIC</abbr>, proposant une formation sur 5 années</h2></div>
-    </div>
+    
     <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
     <!-- Footer -->
