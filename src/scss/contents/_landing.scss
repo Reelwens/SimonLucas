@@ -1,21 +1,21 @@
 body section#landing {
     height: 100vh;
-    border-bottom: 1px solid $grey;
-    
+    border-bottom: 1px solid #bebebe;
+
     #header {
         margin-top: 20px;
-        
+
         div.logo {
             position: relative;
             height: 40px;
-            
+
             @media screen and (max-width: $phone) {
-                
+
             }
-            
+
             div.groupLogo {
                 transform: translateY(-4px);
-                
+
                 img#logo {
                 position: absolute;
                 z-index: 10;
@@ -27,57 +27,57 @@ body section#landing {
                         left: 50%;
                         transform: translateX(-50%);
                     }
-                
+
                 @keyframes bounce {
                   0%, 20%, 50%, 80%, 100% {transform: translateY(-4px);}
                   40% {transform: translateY(-24px);}
                   60% {transform: translateY(-9px);}
                 }
-                
+
                     @media screen and (min-width: $phone) {
                         &:hover {
                             transform: rotate(360deg);
                         }
                     }
                 }
-                
+
                 .square {
                     width: 40px;
                     height: 40px;
                     margin: 8px;
                     background-color: $grey;
                     position: absolute;
-                    
+
                     @media screen and (max-width: $phone) {
                         left: 50%;
                         transform: translateX(-72%);
                     }
                 }
             }
-            
+
             div.clickEvent {
                 animation: bounce 1s 1;
             }
         }
-        
+
         .rightHeader {
         @media screen and (max-width: $phone) {
             text-align: center;
         }
-        
+
             div.menu {
                 display: inline-block;
                 width: 150px;
                 cursor: pointer;
                 position: relative;
                 padding-top: 25px;
-                
+
                 a {
                     font-size: 20px;
                     font-weight: 300;
-                    transition: color 0.7s cubic-bezier(.42, 0, 0, 1), 
+                    transition: color 0.7s cubic-bezier(.42, 0, 0, 1),
                 }
-                
+
                 .underline {
                     background-color: $grey;
                     position: absolute;
@@ -89,13 +89,13 @@ body section#landing {
                     will-change: transform;
                     transition: width 0.7s cubic-bezier(.42, 0, 0, 1), background-color 0.7s cubic-bezier(.42, 0, 0, 1);
                 }
-                
+
                 &:hover {
-                    
+
                     a {
                         color: $grey-hover;
                     }
-                    
+
                     .underline {
                         width: 50%;
                         background-color: $grey-hover;
@@ -104,7 +104,7 @@ body section#landing {
             }
         }
     }
-    
+
     .centerElement {
         position: absolute;
         top: 50%;
@@ -113,22 +113,22 @@ body section#landing {
         will-change: transform;
         cursor: default;
         user-select: none;
-        
+
         h1 {
             font-size: 80px;
             text-transform: uppercase;
-            
+
             span {
                 font-weight: 600;
             }
         }
-        
+
         h2 {
             font-size: 20px;
             margin-top: 6px;
             font-weight: 300;
             cursor: pointer;
-            
+
             span {
                 font-weight: 500;
             }
@@ -150,11 +150,11 @@ body section#landing {
     transition: transform .25s, opacity .25s;
     opacity: 0;
     z-index: 10;
-    
+
     abbr {
         border-bottom: 0px;
     }
-    
+
     &:before {
         content: "";
         border-left: 8px solid transparent !important;
@@ -169,26 +169,43 @@ body section#landing {
         position: absolute;
     }
 }
-    
+
 .display {
     transform:scale(1) rotate(0);
     opacity: 1;
 }
 
-.arrow {
+.scroll {
     position: absolute;
-    bottom: 5%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    bottom: 0;
     left: 50%;
-    
-    animation-name: arrow;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    will-change: transform;
+
+    p {
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+
+    .scrollAnimation {
+        display: block;
+        width: 1px;
+        height: 80px;
+        background-color: $grey;
+
+        animation-name: scroll;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-iteration-count: infinite;
+        will-change: transform;
+    }
 }
 
-@keyframes arrow {
-    0% {transform:   translateX(-50%) translateY(0%);}
-    50% {transform:  translateX(-50%) translateY(20%);}
-    100% {transform: translateX(-50%) translateY(0%);}
+@keyframes scroll {
+    0% {transform: scale(1); transform-origin: bottom;}
+    20% {transform: scale(0); transform-origin: bottom;}
+    21% {transform: scale(0); transform-origin: top;}
+    99% {transform: scale(1); transform-origin: top;}
+    100% {transform: scale(1); transform-origin: bottom;}
 }

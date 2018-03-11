@@ -15,7 +15,7 @@ include 'includes/handler.php';
     <title>Simon LUCAS — Développeur web &amp; designer à HETIC</title>
     <meta name="description" content="Passionné par le web, l'image et ce qui les entoure. Je me forme dans le développement web et le design à HETIC. Découvrez mes projets et compétences." />
     <link rel="icon" type="image/png" href="img/logo.png" sizes="64x64">
-    
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simon LUCAS">
@@ -23,7 +23,7 @@ include 'includes/handler.php';
     <meta name="twitter:creator" content="@Reelwens">
     <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image:src" content="https://www.simonlucas.fr/i/screen.png">
-    
+
     <!-- Open Graph data -->
     <meta property="og:title" content="Simon LUCAS" />
     <meta property="og:type" content="website" />
@@ -31,7 +31,7 @@ include 'includes/handler.php';
     <meta property="og:image" content="https://www.simonlucas.fr/i/screen.png" />
     <meta property="og:description" content="Étudiant passionné par le web, l'image et ce qui les entoure." />
     <meta property="og:site_name" content="Simon LUCAS" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500, 600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
@@ -41,7 +41,7 @@ include 'includes/handler.php';
     //Analytics
     include_once("includes/analyticstracking.php")
     ?>
-    
+
     <!-- Landing section -->
     <section id="landing">
         <div class="container">
@@ -84,18 +84,19 @@ include 'includes/handler.php';
                 <h1>Simon <span>LUCAS</span></h1>
                 <!--<a href="http://hetic.net/" target="_blank">--><h2 id="catchPhrase">Passionné par <span>le web</span>, <span>l'image</span> et ce qui les entoure.</h2><!--</a>-->
             </div> <!-- End center landing -->
-            
-            <div class="arrow">
-                <a href="#projects"><img src="img/down-arrow.svg" alt="Flèche" width="64"></a>
-            </div>
+
+            <a class="scroll" href="#projects">
+                <p>Scroll</p>
+                <div class="scrollAnimation"></div>
+            </a>
 
         </div>
     </section>
-    
+
     <!-- Projects section -->
     <section id="projects">
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title text-center">
@@ -104,7 +105,7 @@ include 'includes/handler.php';
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
@@ -123,7 +124,7 @@ include 'includes/handler.php';
                     </div>
                 </div>
             </div>
-            
+
             <div class="projectList">
                 <div class="row">
 
@@ -166,10 +167,10 @@ include 'includes/handler.php';
 
                 </div>
             </div>
-            
+
         </div>
     </section>
-    
+
     <!-- Skills section -->
     <section id="skills">
         <div class="container">
@@ -181,7 +182,7 @@ include 'includes/handler.php';
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
@@ -200,7 +201,7 @@ include 'includes/handler.php';
                     </div>
                 </div>
             </div>
-            
+
             <div class="skillList">
                 <div class="row">
 
@@ -220,11 +221,11 @@ include 'includes/handler.php';
             </div>
         </div>
     </section>
-    
+
     <!-- Contact section -->
     <section id="contact">
         <div class="container">
-            
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title text-center">
@@ -232,7 +233,7 @@ include 'includes/handler.php';
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="contactBlock text-center">
@@ -247,13 +248,13 @@ include 'includes/handler.php';
 
         </div>
     </section>
-    
+
     <div class="other">
         <!-- Information div -->
         <div class="informationDiv"><h2>J'étudie à <abbr title="Hautes études des technologies de l'information et de la communication">HETIC</abbr>, proposant une formation sur 5 années</h2></div>
     </div>
     <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
