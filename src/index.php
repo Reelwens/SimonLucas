@@ -106,11 +106,11 @@ include 'includes/handler.php';
                 </div>
             </div>
 
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
                         <form action="#projects" method="post">
-                                <input type="hidden" name="type" value="orderProjects"> <!-- PHP post information -->
+                                <input type="hidden" name="type" value="orderProjects">
 
                                 <span class="sortText">Trier par :</span>
 
@@ -123,7 +123,7 @@ include 'includes/handler.php';
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="projectList">
                 <div class="row">
@@ -183,11 +183,11 @@ include 'includes/handler.php';
                 </div>
             </div>
 
-            <div class="row">
+            <!--<div class="row">
                 <div class="col-sm-12">
                     <div class="sortBlock text-center">
                         <form action="#skills" method="post">
-                                <input type="hidden" name="type" value="orderSkills"> <!-- PHP post information -->
+                                <input type="hidden" name="type" value="orderSkills">
 
                                 <span class="sortText">Trier par :</span>
 
@@ -200,7 +200,7 @@ include 'includes/handler.php';
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <div class="skillList">
                 <div class="row">
@@ -248,7 +248,7 @@ include 'includes/handler.php';
 
         </div>
     </section>
-    
+
     <a href="javascript:" id="return-to-top" class="hidden-md hidden-sm hidden-xs" title="Revenir en haut de la page"><i class="icon-chevron-up"></i></a>
 
     <!-- Footer -->

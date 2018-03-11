@@ -178,6 +178,7 @@ body section#landing {
 .scroll {
     position: absolute;
     display: flex;
+    transform: translateX(-50%);
     flex-flow: column;
     align-items: center;
     bottom: 0;
